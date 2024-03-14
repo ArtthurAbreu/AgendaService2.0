@@ -1,0 +1,45 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.Sidebar {
+  background-color: #fff;
+  padding: 6rem 0;
+  max-width: fit-content;
+  position: fixed;
+  height: 100%;
+  z-index: 10;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+
+
+
+  .navigation {
+    ul {
+      text-align: center;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: #000;
+          text-transform: uppercase;
+          display: block;
+          padding: 1.5rem 1rem;
+
+          svg {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-bottom: 0.5rem;
+          }
+
+          &:hover,&.active {
+       
+
+            background-color: #ed8750;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.dashboard {
+  .columns {
+    display: flex;
+    gap: 6rem;
+    margin-top: 4rem;
+
+    .column1,
+    .column2 {
+      width: 100%;
+    }
+
+    .column2 {
+      max-width: 30rem;
+    }
+  }
+}

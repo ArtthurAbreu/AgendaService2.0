@@ -1,3 +1,4 @@
+
 import Heading from "src/UI/Heading/Heading"
 import Link from "next/link"
 
@@ -6,20 +7,12 @@ import Link from "next/link"
 const Servicos = () => {
   return (
     <section>
-      <Heading title='Servicos' />
-
-      <div style={{ marginBottom: '10px' }}>
-        <Link href='/Servicos' className='btn btn-primary'>
-          Listar Serviços
-        </Link>
-      </div>
-
-      <div>
-        <Link href='/Servicos' className='btn btn-primary'>
-          Cadastrar Serviços
-        </Link>
-      </div>
-    </section>
-  );
+    <Heading title='Serviços'/>
+    <Link href='/Servicos/List_Servicos' className='btn btn-primary '>Listar Serviço </Link>  
+    <Link href='/Servicos/Add_Servicos' className='btn btn-primary  '>Cadastrar Serviço </Link>
+    
+  </section>
+  
+    );
 }
 export default Servicos

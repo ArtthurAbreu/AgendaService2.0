@@ -1,4 +1,4 @@
-    
+@import 'styles/mixins.scss';
 .main {
   .content {
     padding: 7rem;
@@ -6,5 +6,11 @@
     max-width: 140rem;
     margin-left: 10.5rem;
     background-color: #f6f9ff;
+
+    @include device(tablet) {
+      margin-left: 0;
+      margin-bottom: 8rem;
+      padding: 3rem;
+    }
   }
 }

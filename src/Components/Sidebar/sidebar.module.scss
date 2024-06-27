@@ -10,12 +10,25 @@
   z-index: 10;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 
+  @include device(tablet) {
+    bottom:0;
+    height: auto;
+    max-width: none;
+    width:100%;
+    padding: 0;
+    
+
+}
 
 
   .navigation {
     ul {
       text-align: center;
       list-style: none;
+      @include device(tablet) {
+        display: flex;
+        justify-content: center ;
+      }
 
       li {
         a {
@@ -25,6 +38,13 @@
           text-transform: uppercase;
           display: block;
           padding: 1.5rem 1rem;
+
+          @include device(tablet) {
+            padding: 1.5rem 2.5rem;
+          }
+          @include device(mobile) {
+            padding: 1.5rem 1.5rem;
+          }
 
           svg {
             width: 2.4rem;

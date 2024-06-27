@@ -8,7 +8,7 @@ const Clientes = () => {
       <Heading title='Clientes'/>
       <Link href='/Clientes/List_Clientes' className='btn btn-primary'>Listar Clientes</Link> 
       <Link href='/Clientes/AddClientes' className='btn btn-primary'>Cadastrar Clientes</Link> 
-      <Link href='/Clientes/Upd_Clientes' className='btn btn-primary'>Atulaizar Clientes</Link> 
+      <Link href='/Clientes/Upd_Clientes' className='btn btn-primary'>Atualizar Clientes</Link> 
       
        
     </section>

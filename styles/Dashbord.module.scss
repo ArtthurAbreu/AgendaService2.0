@@ -6,6 +6,14 @@
     display: flex;
     gap: 6rem;
     margin-top: 4rem;
+    
+    @include device(tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @include device(notebook) {
+      gap: 3rem;
+    }
 
     .column1,
     .column2 {
@@ -14,6 +22,10 @@
 
     .column2 {
       max-width: 30rem;
+
+      @include device(tablet) {
+        max-width: none;
+      }
     }
   }
 }

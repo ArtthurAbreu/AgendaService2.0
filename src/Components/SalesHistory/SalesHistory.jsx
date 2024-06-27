@@ -1,5 +1,4 @@
-
-//'use client';
+'use client';
 import dynamic from 'next/dynamic';
 import styles from './SalesHistory.module.scss';
 import { useState, useEffect } from 'react';

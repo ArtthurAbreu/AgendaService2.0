@@ -48,7 +48,7 @@ const Add_Mecanico = () => {
 
   return (
     <section>
-      <Heading title='Cadastrar Cliente' subtitle='Preencha os campos'/>
+      <Heading title='Cadastrar Mecânico' subtitle='Preencha os campos'/>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name"></label>

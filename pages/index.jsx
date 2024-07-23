@@ -6,9 +6,12 @@ import SalesHistory from 'src/Components/SalesHistory/SalesHistory';
 import SalesGoal from 'src/Components/SalesGoal/SalesGoal';
 import TopSales from 'src/Components/TopSales/TopSales';
 import Header from 'src/Components/Header/Header';
+import Tabela from 'src/Components/Tabela/Tabela';
+
 
 
 export default function Home() {
+  
   return (
   <section className={styles.dashboard}>
   <Heading title='Dashboard'
@@ -18,12 +21,12 @@ export default function Home() {
     <section className={styles.column1}>
       <Cards />
       <SalesHistory />
+      <Tabela/>
     </section>
     <section className={styles.column2}>
     <SalesGoal />
     <TopSales />
-    </section>
-    
+    </section> 
   </section>
   </section>
   );

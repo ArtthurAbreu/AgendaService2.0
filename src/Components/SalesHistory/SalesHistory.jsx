@@ -1,4 +1,4 @@
-//'use client';
+'use client';
 import dynamic from 'next/dynamic';
 import styles from './SalesHistory.module.scss';
 import { useState, useEffect } from 'react';
@@ -9,7 +9,7 @@ const SalesHistory = () => {
   const [chartOptions, setChartOptions] = useState(null);
 
   useEffect(() => {
-    // Verificando se as opções do gráfico são definidas
+    
     if (!chartOptions) {
       setChartOptions({
         series: [{
@@ -21,7 +21,7 @@ const SalesHistory = () => {
             height: 350,
             type: 'line',
             zoom: {
-              enabled: false
+              enabled: false  
             }
           },
           dataLabels: {
@@ -41,7 +41,7 @@ const SalesHistory = () => {
             },
           },
           xaxis: {
-            categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set'],
+            categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set','Out','Nov','Dez'],
           }
         }
       });
@@ -62,7 +62,9 @@ const SalesHistory = () => {
             options={chartOptions.options} 
             series={chartOptions.series} 
             type="line" 
+             width={'100%'}
             height={350} 
+            
           />
         </div>
       </div>

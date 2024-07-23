@@ -1,9 +1,12 @@
+@import 'styles/mixins.scss';
 .footer {
 
   color: #333;
   padding: 0;
   text-align: center;
   font-size: 12px;
+  
+
 
 }
 
@@ -13,5 +16,6 @@
 
 .footer span {
   font-weight: bold;
+ 
 }
 

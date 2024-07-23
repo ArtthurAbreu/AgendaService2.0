@@ -9,7 +9,7 @@ const List_Servicos = ()=> {
             Nome
 
           </label>
-          <input type="text" name="name" id="Listservico" placeholder="Nome do servico" />
+          <input type="text" name="name" id="Listservico" placeholder="Nome do serviço" />
         </div>
         <button className="btn btn-primary">Listar</button>
       </form>

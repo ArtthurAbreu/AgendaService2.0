@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
       </Head>
         <Sidebar />
         <Header />
+        <hr />
         
       <main className={styles.main}>
      
